@@ -72,7 +72,7 @@ function IndexNavbar() {
             title="Coded by Creative Tim"
           >
             <img src={require("assets/img/Asset 1logo.png")} width="5%"></img>
-              DSC MESCOE
+  {' '}DSC MESCOE
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

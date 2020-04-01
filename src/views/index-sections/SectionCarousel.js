@@ -33,20 +33,21 @@ import {
 // core components
 
 const items = [
+ 
   {
-    src: require("assets/img/gp1.jpeg"),
-    altText: "gp1",
-    caption: " The one with nikhil raichur"
+    src: require("assets/img/gp4.jpg"),
+    altText: "gp4",
+    caption: "The one with faculties"
   },
   {
-    src: require("assets/img/gp2.jpg"),
-    altText: "gp2",
-    caption: "The one with lots of subway"
+    src: require("assets/img/gp5.jpg"),
+    altText: "gp5",
+    caption: "The one with the group"
   },
   {
-    src: require("assets/img/gp3.jpeg"),
-    altText: "gp3",
-    caption: "GCP cloud"
+    src: require("assets/img/gp10.jpg"),
+    altText: "gp9",
+    caption: " "
   }
 ];
 
@@ -78,7 +79,7 @@ function SectionCarousel() {
       <div className="section pt-o" id="carousel">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto" md="8">
+            <Col className="ml-auto mr-auto" md="10">
               <Card className="page-carousel">
                 <Carousel
                   activeIndex={activeIndex}
