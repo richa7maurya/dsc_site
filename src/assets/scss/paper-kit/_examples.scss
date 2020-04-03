@@ -5,8 +5,8 @@
     background-color: #B2AFAB;
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
-    max-height: 999px;
+    min-height: 85vh;
+    max-height: 100px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2%;
 
     .filter::after{
         background-color: rgba(0, 0, 0, 0.5);
@@ -173,21 +174,23 @@
 }
 
 .presentation-title{
-    font-size: 8em;
-    font-weight: 700;
+    font-size: 4em;
+    font-weight: 400;
     margin: 0;
-    color: #FFFFFF;
-    background: #fbf8ec;
-    background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-    background: -webkit-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
-    background: -ms-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-
+   
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 05%, rgb(217, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 05%,#1605ff 100%);
+    background: -ms-linear-gradient(top, rgb(255, 255, 255) 05%,#03ff24 100%);
+    background-image: linear-gradient(to right, red 10% ,blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .presentation-subtitle{
-    font-size: 1.7em;
+    font-size: 2.7em;
+    background-image: linear-gradient(to right, green , yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     color: #FFFFFF;
 }
 

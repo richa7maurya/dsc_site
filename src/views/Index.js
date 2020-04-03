@@ -54,10 +54,12 @@ function Index() {
       <IndexHeader />
       <div className="main">
         <SectionButtons />
+   
         <SectionCarousel />
         <SectionDark />
-       
-      
+        <SectionNucleoIcons/>
+        
+ 
         <DemoFooter />
       </div>
     </>

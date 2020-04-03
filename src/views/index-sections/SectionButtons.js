@@ -1,9 +1,7 @@
 /*!
-
 =========================================================
 * Paper Kit React - v1.0.0
 =========================================================
-
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
@@ -28,7 +26,6 @@ import {
 } from "reactstrap";
 
 function SectionButtons() {
- 
   return (
     <>
       <div className="section section-buttons">
@@ -36,14 +33,14 @@ function SectionButtons() {
           <div >
              <h2 className="presentation-title text-center " >
             
-            <small><small>ABOUT US</small></small>
+            <small><b>ABOUT US</b></small>
             </h2>
           </div>
           <div id="buttons">
             <div className="title " >
-               <h3 > 
+               <h3 ><b> 
               Developer Student Club (DSC) is a Google Developers program for university students to learn mobile and web development skills. The club will be open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. The club is intended as a space for students to try out new ideas and collaborate to solve mobile and web development problems.
-               </h3>
+              </b>   </h3>
             </div>
             <br />
          <div >
@@ -64,12 +61,11 @@ function SectionButtons() {
             </Row>
             <br/>
             <br/>
-            
             <Row >
               <Col  className=" text-center" >
                 <Button
                   className="btn-round mr-1"
-                  color="danger"
+                  color="success"
                 
                   type="button"
                   
@@ -81,14 +77,16 @@ function SectionButtons() {
               </Col>
             </Row>
             </div>
-            <br />
-            <div className="title text-center">
-            <h1>What we do?</h1>
-          </div>
+            <br/>
+            <br/>
+            <h2 className="presentation-title text-center">
+           <small><b>WHAT WE DO?</b></small>
+          </h2>
           <div id="buttons">
             <div className="title">
-               <h3>
-               Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical domains and try to make use of Google Technologies to empower the audience around us.   </h3>
+               <h3><b>
+               Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical domains and try to make use of Google Technologies to empower the audience around us.  
+               </b> </h3>
             </div>
           </div>
           </div>

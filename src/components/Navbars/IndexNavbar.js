@@ -90,23 +90,13 @@ function IndexNavbar() {
           <NavbarBrand
           
             data-placement="bottom"
-            href="/index"
+            href=''
             target="_blank"
             title="Coded by Creative Tim"
           >
            EVENTS
           </NavbarBrand>
-          <button
-            aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
-            })}
-            onClick={toggleNavbarCollapse}
-          >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
-          </button>
+         
         </div>
         <Collapse
           className="justify-content-end"
@@ -118,7 +108,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://t.co/vd6GB6Akbw?amp=1"
+                href="https://twitter.com/dscmescoe?lang=en"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -141,7 +131,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href="https://github.com/richa7maurya/dsc_site"
                 target="_blank"
                 title="Star on GitHub"
               >

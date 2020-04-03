@@ -29,41 +29,21 @@ function IndexHeader() {
     <>
       <div
         className="page-header section-dark"
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")"
-        }}
+       
       >
         <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title"><small>Developer Student Clubs</small> </h1>
-              <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-            </div>
-           
-            <h2 className="presentation-title text-center">
+              <h1 className="presentation-title">DSC MESCOE</h1>
              
-             <big><big> MESCOE</big></big>
-            </h2>
-            <h2 className="presentation-title text-center">
-            
-            <small><small>Powered By Google Developers</small></small>
+            </div>
+            <h2 className="presentation-subtitle text-center">
+            POWERED BY GOOGLE DEVELOPERS
             </h2>
           </Container>
         </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
-          }}
-        />
-        
+      
        
       </div>
     </>

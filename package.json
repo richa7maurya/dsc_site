@@ -3,18 +3,26 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "bounce": "^1.2.3",
     "classnames": "2.2.6",
     "moment": "2.24.0",
     "node-sass": "4.12.0",
     "nouislider": "13.1.5",
     "react": "16.8.6",
+    "react-animation": "^1.2.2",
+    "react-animations": "^1.0.0",
+    "react-anime": "^3.0.3",
     "react-bootstrap-switch": "15.5.3",
+    "react-components": "^0.5.1",
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
+    "react-photo-gallery": "^8.0.0",
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
-    "reactstrap": "8.0.0"
+    "react-spring": "^8.0.27",
+    "reactstrap": "8.0.0",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
