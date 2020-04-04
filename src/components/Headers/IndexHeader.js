@@ -28,10 +28,10 @@ function IndexHeader() {
   return (
     <>
       <div
-        className="page-header section-dark"
+        className="page-header "
        
       >
-        <div className="filter" />
+        <div className="" />
         <div className="content-center">
           <Container>
             <div className="title-brand">

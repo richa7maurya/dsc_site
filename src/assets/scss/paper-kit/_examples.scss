@@ -2,11 +2,13 @@
     margin-bottom: 0;
 }
 .page-header{
-    background-color: #B2AFAB;
+    background-color: white;
+    background-image: url("https://image.freepik.com/free-vector/flat-design-geometric-shapes-background_23-2148366514.jpg");
+   background-position: center;
     background-position: center center;
     background-size: cover;
-    min-height: 85vh;
-    max-height: 100px;
+    min-height: 100vh;
+    max-height: 80px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -14,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
+ 
 
     .filter::after{
         background-color: rgba(0, 0, 0, 0.5);
@@ -174,24 +176,25 @@
 }
 
 .presentation-title{
-    font-size: 4em;
-    font-weight: 400;
+    font-size: 5em;
+    font-weight: 500;
     margin: 0;
-   
-    background: -moz-linear-gradient(top, rgb(255, 255, 255) 05%, rgb(217, 255, 0) 100%);
-    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 05%,#1605ff 100%);
-    background: -ms-linear-gradient(top, rgb(255, 255, 255) 05%,#03ff24 100%);
-    background-image: linear-gradient(to right, red 10% ,blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   color: black;
+  //  background: -moz-linear-gradient(top, rgb(255, 255, 255) 05%, rgb(217, 255, 0) 100%);
+   // background: -webkit-linear-gradient(top, rgb(255, 255, 255) 05%,#1605ff 100%);
+    //background: -ms-linear-gradient(top, rgb(255, 255, 255) 05%,#03ff24 100%);
+    //background-image: linear-gradient(to right, rgb(199, 191, 191) 10% ,rgb(37, 35, 35));
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
 }
 .presentation-subtitle{
-    font-size: 2.7em;
-    background-image: linear-gradient(to right, green , yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    font-weight: 400;
+   // background-image: linear-gradient(to right, rgb(199, 191, 191), rgb(37, 35, 35));
+   // -webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
 
-    color: #FFFFFF;
+    color: black;
 }
 
 .category-absolute{

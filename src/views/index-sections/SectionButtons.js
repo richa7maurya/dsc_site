@@ -1,4 +1,7 @@
 /*!
+
+About us page
+
 =========================================================
 * Paper Kit React - v1.0.0
 =========================================================
@@ -16,6 +19,8 @@
 */
 import React from "react";
 // react plugin used to create switch buttons
+import styled from "styled-components";
+
 
 // reactstrap components
 import {
@@ -31,6 +36,7 @@ function SectionButtons() {
       <div className="section section-buttons">
         <Container>
           <div >
+           
              <h2 className="presentation-title text-center " >
             
             <small><b>ABOUT US</b></small>
@@ -60,35 +66,9 @@ function SectionButtons() {
               </Col>
             </Row>
             <br/>
-            <br/>
-            <Row >
-              <Col  className=" text-center" >
-                <Button
-                  className="btn-round mr-1"
-                  color="success"
-                
-                  type="button"
-                  
-                  onClick={e=>window.open("https://goo.gl/maps/YEyrDE2ytWZSkWSX9","_blank")}
-                >
-                  FIND US ON MAP
-                </Button>
-                
-              </Col>
-            </Row>
+            
             </div>
-            <br/>
-            <br/>
-            <h2 className="presentation-title text-center">
-           <small><b>WHAT WE DO?</b></small>
-          </h2>
-          <div id="buttons">
-            <div className="title">
-               <h3><b>
-               Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical domains and try to make use of Google Technologies to empower the audience around us.  
-               </b> </h3>
-            </div>
-          </div>
+           
           </div>
          
         </Container>

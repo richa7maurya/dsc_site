@@ -9,7 +9,7 @@
 }
 .navbar {
     border: $none;
-    font-size: $font-size-base;
+    font-size: $font-size-medium;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     padding: 0;
@@ -20,8 +20,8 @@
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
-        font-size: $font-size-base;
-        color: $default-color;
+        font-size: $font-size-medium;
+        color: black;
         text-transform: uppercase;
     }
     .navbar-toggler:focus {
@@ -44,16 +44,16 @@
             line-height: 1.6;
             margin: $navbar-margin-a;
             padding: $navbar-padding-a;
-            opacity: .8;
-            font-size: $font-size-small;
+            opacity: 1;
+            font-size: $font-size-medium;
             text-transform: uppercase;
-            font-weight: 600;
-            color: $default-color;
+            font-weight: 800;
+            color:black;
 
             p {
               margin: 0px 0px;
               text-transform: uppercase;
-              font-weight: 600;
+              font-weight: 800;
               font-size: 12px;
               line-height: 1.5em;
               padding: 15px 0;
@@ -76,7 +76,7 @@
         .nav-item {
           .btn {
             i {
-              color: $white-color;
+              color: $black-color;
             }
           }
         }
@@ -142,18 +142,18 @@
       box-shadow: none;
 
       .navbar-brand {
-        color: $white-color;
+        color: $black-color;
       }
 
       .navbar-nav {
         .nav-item .nav-link {
-          color: $white-color;
+          color: $black-color;
         }
       }
 
       .navbar-toggler {
         .navbar-toggler-bar {
-          background: $white-color !important;
+          background: $black-color !important;
         }
       }
     }
@@ -172,7 +172,7 @@
         }
         .brand{
             font-size: 18px;
-            color: #FFFFFF;
+            color: black;
             line-height: 20px;
             float: left;
             margin-left: 10px;
@@ -187,7 +187,7 @@
     }
     .navbar-toggler {
       .navbar-toggler-bar {
-        background: $white-color !important;
+        background: $black-color !important;
         display: block;
         position: relative;
         width: 24px;
@@ -200,21 +200,21 @@
 
 .navbar-transparent, [class*="bg"]{
     .navbar-brand{
-        color: $white-color;
-        @include opacity(.9);
+        color: $black-color;
+        @include opacity(1);
 
         &:focus,
         &:hover{
             background-color: transparent;
             @include opacity(1);
-            color: $white-color;
+            color: grey;
         }
     }
 
     .navbar-nav{
         .nav-item .nav-link:not(.btn){
-            color: $white-color;
-            border-color: $white-color;
+            color: $black-color;
+            border-color: $black-color;
         }
         .active .nav-link
         .active .nav-link:hover,
@@ -222,7 +222,7 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color: $white-color;
+            color: grey;
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover{
@@ -232,8 +232,8 @@
         .dropdown .nav-link .caret,
         .dropdown .nav-link:hover .caret,
         .dropdown .nav-link:focus .caret{
-            border-bottom-color: $white-color;
-            border-top-color: $white-color;
+            border-bottom-color: $black-color;
+            border-top-color: $black-color;
         }
 
         .open .nav-link,
@@ -247,7 +247,7 @@
 
     .btn-default.btn-fill{
         color: $dark-gray;
-        background-color: $white-color;
+        background-color: $black-color;
         @include opacity(.9);
     }
     .btn-default.btn-fill:hover,
@@ -255,7 +255,7 @@
     .btn-default.btn-fill:active,
     .btn-default.btn-fill.active,
     .open .dropdown-toggle.btn-fill.btn-default{
-        border-color: $white-color;
+        border-color: grey;
         @include opacity(1);
     }
 
