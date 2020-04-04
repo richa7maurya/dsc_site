@@ -27,6 +27,7 @@ import "assets/demo/demo.css";
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
+import GalleryPage from "views/GalleryPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
@@ -40,7 +41,10 @@ ReactDOM.render(
         path="/nucleo-icons"
         render={props => <NucleoIcons {...props} />}
       />
-    
+      <Route
+        path="/gallery-page"
+        render={props => <GalleryPage {...props} />}
+      />
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,

@@ -6,7 +6,7 @@
     "bounce": "^1.2.3",
     "classnames": "2.2.6",
     "moment": "2.24.0",
-    "node-sass": "4.12.0",
+    "node-sass": "^4.13.1",
     "nouislider": "13.1.5",
     "react": "16.8.6",
     "react-animation": "^1.2.2",

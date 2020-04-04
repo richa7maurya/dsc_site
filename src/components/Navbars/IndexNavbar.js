@@ -65,14 +65,9 @@ function IndexNavbar() {
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            href="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
-          >
-            <img src={require("assets/img/Asset 1logo.png")} width="5%"></img>
-  {' '}DSC MESCOE
+          <NavbarBrand data-placement="bottom" href="/index" title="DSC MESCOE">
+            <img src={require("assets/img/Asset 1logo.png")} width="5%"></img>{" "}
+            DSC MESCOE
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -86,61 +81,28 @@ function IndexNavbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <div className="navbar-translate">
-          <NavbarBrand
-          
-            data-placement="bottom"
-            href=''
-            target="_blank"
-            title="Coded by Creative Tim"
-          >
-           EVENTS
-          </NavbarBrand>
-         
-        </div>
+
         <Collapse
           className="justify-content-end"
           navbar
           isOpen={navbarCollapse}
         >
-         
           <Nav navbar>
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/dscmescoe?lang=en"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-           
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/mescoedsc/?hl=en"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+              <NavLink data-placement="bottom" href="/gallery-page">
+                Team
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://github.com/richa7maurya/dsc_site"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+              <NavLink data-placement="bottom" href="/gallery-page">
+                Gallery
               </NavLink>
             </NavItem>
-           
-           
+            <NavItem>
+              <NavLink data-placement="bottom" href="/gallery-page">
+                Contact
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Container>
