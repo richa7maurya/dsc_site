@@ -17,11 +17,16 @@ class GalleryCard extends React.Component {
                 this.props.id,
                 this.props.name,
                 this.props.description,
-                this.props.img
+                this.props.cover
               )
             }
           >
-            <CardImg top src={this.props.img} alt="Event 1"></CardImg>
+            <CardImg
+              top
+              src={this.props.cover}
+              alt="Event 1"
+              style={{ height: 200, objectFit: "cover" }}
+            ></CardImg>
             <CardBody>
               <CardTitle>
                 <h3 style={{ marginBottom: 15 }}>{this.props.name}</h3>
