@@ -45,9 +45,9 @@ function LandingPageHeader(props) {
         style={{
           backgroundImage:
             "url(" +
-            (props.img == "none"
-              ? require("assets/img/daniel-olahh.jpg")
-              : props.img) +
+            (props.cover == "none"
+              ? require("assets/img/cover.jpg")
+              : props.cover) +
             ")"
         }}
         className="page-header"

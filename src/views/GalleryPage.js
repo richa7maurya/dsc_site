@@ -34,14 +34,14 @@ class LandingPage extends React.Component {
       events: [],
       photos: [],
       name: "Gallery",
-      description: "Creating a timeless look, coupled with a flawless moment",
-      img: "none"
+      description: "Creating a timeless look, coupled with a flawless moment!",
+      cover: "none"
     };
     this.loadEventGallery = this.loadEventGallery.bind(this);
     this.events = React.createRef();
   }
   componentDidMount() {
-    fetch("http://localhost/logo.php")
+    fetch("http://localhost/dsc_site/server/getGalleryPhotos.php")
       .then(response => response.json())
       .then(events => {
         let array = [];
@@ -54,7 +54,7 @@ class LandingPage extends React.Component {
               name={event.name}
               date={event.date}
               description={event.description}
-              img={event.img}
+              cover={event.cover}
               loadEventGallery={this.loadEventGallery}
             />
           );
@@ -63,10 +63,10 @@ class LandingPage extends React.Component {
       });
   }
 
-  loadEventGallery(id, name, description, img) {
+  loadEventGallery(id, name, description, cover) {
     this.events.current.className = "d-none";
-    this.setState({ name: name, description: description, img: img });
-    fetch(`http://localhost/logo.php?event=${id}`)
+    this.setState({ name: name, description: description, cover: cover });
+    fetch(`http://localhost/dsc_site/server/getGalleryPhotos.php?event=${id}`)
       .then(response => response.json())
       .then(photos => {
         let array = [];
@@ -85,7 +85,7 @@ class LandingPage extends React.Component {
         <LandingPageHeader
           name={this.state.name}
           description={this.state.description}
-          img={this.state.img}
+          cover={this.state.cover}
         />
         <div className="main">
           <div className="section text-center">
