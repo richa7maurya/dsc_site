@@ -2,8 +2,8 @@
     margin-bottom: 0;
 }
 .page-header{
-    background-color: white;
-    background-image: url("https://image.freepik.com/free-vector/flat-design-geometric-shapes-background_23-2148366514.jpg");
+ //   background-color: white;
+   background-image: url("../img/dsc-site.png");
    background-position: center;
     background-position: center center;
     background-size: cover;
@@ -268,4 +268,26 @@
             height: 100%;
         }
     }
+}
+.form_text{
+    padding: 10px;
+    margin-top: 10px;
+    border:2px solid black;
+    border-radius: 25px 25px;
+    background-color: rgb(216, 219, 215);
+}
+
+.btn-style{
+    padding: 20px;
+    border-radius: 20px 20px;
+    border: inset;;
+    border-color: rgb(38, 228, 102);
+}
+.card-style
+{
+    margin: 5%;
+    border: 2px solid black;
+    padding: 15px;
+  //  background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMocL4UNB3YZRLYRtno3RQtHrDyfFvT0RRuZKq49W-JygRhL9h&usqp=CAU");
 }

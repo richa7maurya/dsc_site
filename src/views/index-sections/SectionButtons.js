@@ -43,7 +43,7 @@ function SectionButtons() {
             </h2>
           </div>
           <div id="buttons">
-            <div className="title " >
+            <div className="title " style={{color:"white"}}>
                <h3 ><b> 
               Developer Student Club (DSC) is a Google Developers program for university students to learn mobile and web development skills. The club will be open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. The club is intended as a space for students to try out new ideas and collaborate to solve mobile and web development problems.
               </b>   </h3>
@@ -54,7 +54,7 @@ function SectionButtons() {
               <Col  className=" text-center" >
                 <Button
                   className="btn-round mr-1"
-                  color="success"
+                  color="danger"
                   outline
                   type="button"
                   

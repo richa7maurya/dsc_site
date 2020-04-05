@@ -17,6 +17,7 @@
     "react-components": "^0.5.1",
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
+    "react-flippy": "^0.1.5",
     "react-lazy-load-image-component": "^1.4.3",
     "react-photo-gallery": "^8.0.0",
     "react-router": "5.0.1",
