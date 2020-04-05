@@ -11,7 +11,7 @@ class GalleryCard extends React.Component {
       <>
         <Col className="" md="4">
           <Card
-            style={{ width: "20rem" }}
+            style={{ width: "95%" }}
             onClick={() =>
               this.props.loadEventGallery(
                 this.props.id,

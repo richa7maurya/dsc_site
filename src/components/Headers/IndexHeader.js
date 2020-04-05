@@ -27,24 +27,18 @@ import { Container } from "reactstrap";
 function IndexHeader() {
   return (
     <>
-      <div
-        className="page-header "
-       
-      >
+      <div className="page-header ">
         <div className="" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
               <h1 className="presentation-title">DSC MESCOE</h1>
-             
             </div>
             <h2 className="presentation-subtitle text-center">
-            POWERED BY GOOGLE DEVELOPERS
+              POWERED BY GOOGLE DEVELOPERS
             </h2>
           </Container>
         </div>
-      
-       
       </div>
     </>
   );
