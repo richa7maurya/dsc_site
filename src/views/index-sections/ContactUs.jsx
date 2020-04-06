@@ -58,13 +58,19 @@ function ContactUs()
 
                         </b>
                         </h2>
-                        <br/>
+                       
                         <br/>
                         <br/> 
-                        <CardLink className="btn-style" href="https://goo.gl/maps/YEyrDE2ytWZSkWSX9" >HERE</CardLink>
+                        <br/>
+                        <br/> 
                       </CardTitle>
                       </Col>
-                   
+                   <Row >
+                     <Col md="12">
+                       
+                       <iframe style={{width:"90%",height:"100%",border:"2px solid black",ariahidden:"false", tabindex:"0"}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1891.4351017684096!2d73.8795644!3d18.5347667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19b6e6e8b35%3A0x8cab210bf925c00e!2sDSC%20MESCOE!5e0!3m2!1sen!2sin!4v1586159813051!5m2!1sen!2sin"></iframe>
+                   </Col>
+                   </Row>
                     </Row>
                 </CardBody>
                </Card>
@@ -76,15 +82,14 @@ function ContactUs()
                      <Col > 
                         <CardTitle>
                           
-                          <h2>
+                          <h3>
                               <b>
                               LEAVE A MESSAGE
                               </b>
-                              </h2>
+                          </h3>
                               <form>
                               <br />
                                   <input type="text" class="form_text"></input>
-                                    <br />
                                     <br />
                                     <br />
                                     <button className="btn btn-outline-success btn-style">
@@ -98,32 +103,27 @@ function ContactUs()
                       </Col>
                    
                     </Row>
-                </CardBody>
-                
-               </Card>
-               <Card  className="card-style" >
-                <CardBody >
                     <Row className=" text-center">
                      <Col > 
                         <CardTitle>
                           
-                          <h2>
+                          <h3>
                               <b>
-                              STAY IN TOUCH
+                               STAY IN TOUCH
                               <br />
                               </b>
-                              </h2>
-                              <form>
+                           </h3>
+                              <form><b>
                                   eMail   : <input type="email" class="form_text"></input>
                                   <br/>
                                   <br/>
                                   Name : <input type="text" class="form_text"></input>
                                     <br />
                                     <br />
-                                    <br />
                                     <button className="btn btn-outline-success btn-style">
-                                      SUBSCRIBE
+                                        SUBSCRIBE
                                     </button>
+                                    </b>
                               </form>
                            
                             
