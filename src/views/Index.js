@@ -17,6 +17,7 @@
 
 */
 import React from "react";
+import ReactDOM from "react-dom";
 
 // reactstrap components
 
@@ -39,28 +40,42 @@ import SectionDark from "views/index-sections/SectionDark.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 import SectionDownload from "views/index-sections/SectionDownload.js";
-import ContactUs from "views/index-sections/ContactUs.jsx"
+import ContactUs from "views/index-sections/ContactUs.jsx";
 
-function Index() {
-  document.documentElement.classList.remove("nav-open");
-  React.useEffect(() => {
+class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.getContact = props.getContact;
+    this.contact = React.createRef();
+  }
+
+  componentDidMount() {
+    if (this.getContact == 1) {
+      let rect = ReactDOM.findDOMNode(
+        this.contact.current
+      ).getBoundingClientRect();
+      window.scrollTo(0, rect.y);
+    }
+  }
+
+  render() {
+    document.documentElement.classList.remove("nav-open");
+
     document.body.classList.add("index");
-    return function cleanup() {
-      document.body.classList.remove("index");
-    };
-  });
-  return (
-    <>
-      <IndexNavbar />
-      <IndexHeader />
-      <div className="main">
-        <SectionButtons />
-        <ContactUs/>
 
-        <DemoFooter />
-      </div>
-    </>
-  );
+    return (
+      <>
+        <IndexNavbar />
+        <IndexHeader />
+        <div className="main">
+          <SectionButtons />
+          <ContactUs ref={this.contact} />
+
+          <DemoFooter />
+        </div>
+      </>
+    );
+  }
 }
 
 export default Index;

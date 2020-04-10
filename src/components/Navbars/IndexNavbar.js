@@ -28,7 +28,7 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
 } from "reactstrap";
 
 function IndexNavbar(props) {
@@ -72,7 +72,7 @@ function IndexNavbar(props) {
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
+              toggled: navbarCollapse,
             })}
             onClick={toggleNavbarCollapse}
           >
@@ -99,7 +99,7 @@ function IndexNavbar(props) {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink data-placement="bottom" href="/index#ContactUs">
+              <NavLink data-placement="bottom" href="/contact-us">
                 Contact
               </NavLink>
             </NavItem>

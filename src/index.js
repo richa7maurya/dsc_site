@@ -38,18 +38,23 @@ import ContactUs from "views/index-sections/ContactUs.jsx";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={props => <Index {...props} />} />
-     
+      <Route path="/index" render={(props) => <Index {...props} />} />
+
       <Route
         path="/gallery-page"
-        render={props => <GalleryPage {...props} />}
+        render={(props) => <GalleryPage {...props} />}
       />
-     
-       <Route
+
+      <Route
         path="/profile-page"
-        render={props => <ProfilePage {...props} />}
+        render={(props) => <ProfilePage {...props} />}
       />
-      
+
+      <Route
+        path="/contact-us"
+        render={(props) => <Index {...props} getContact={1} />}
+      />
+
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
