@@ -31,6 +31,8 @@ import GalleryPage from "views/GalleryPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
+
+import ContactUs from "views/index-sections/ContactUs.jsx";
 // others
 
 ReactDOM.render(
@@ -42,6 +44,12 @@ ReactDOM.render(
         path="/gallery-page"
         render={props => <GalleryPage {...props} />}
       />
+     
+       <Route
+        path="/profile-page"
+        render={props => <ProfilePage {...props} />}
+      />
+      
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,

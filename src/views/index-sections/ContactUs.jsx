@@ -65,10 +65,10 @@ function ContactUs()
                         <br/> 
                       </CardTitle>
                       </Col>
-                   <Row >
-                     <Col md="12">
+                   <Row className="justify-content-center">
+                     <Col >
                        
-                       <iframe style={{width:"90%",height:"100%",border:"2px solid black",ariahidden:"false", tabindex:"0"}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1891.4351017684096!2d73.8795644!3d18.5347667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19b6e6e8b35%3A0x8cab210bf925c00e!2sDSC%20MESCOE!5e0!3m2!1sen!2sin!4v1586159813051!5m2!1sen!2sin"></iframe>
+                       <iframe style={{width:"100%",height:"100%",border:"2px solid black",ariahidden:"false", tabindex:"0"}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1891.4351017684096!2d73.8795644!3d18.5347667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19b6e6e8b35%3A0x8cab210bf925c00e!2sDSC%20MESCOE!5e0!3m2!1sen!2sin!4v1586159813051!5m2!1sen!2sin"></iframe>
                    </Col>
                    </Row>
                     </Row>

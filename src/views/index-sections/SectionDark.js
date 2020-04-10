@@ -29,9 +29,7 @@ import {  Card,
   CarouselCaption } from "reactstrap";
   import styled,{keyframes} from 'styled-components'
   // core components
-  import {bounce} from 'react-animations'
-  
-  const Bounce=styled.div`animation:1s ${keyframes`${bounce}`} infinite`;
+ 
 // core components
 function SectionDark(){
   return (
@@ -41,7 +39,7 @@ function SectionDark(){
           <Row>
             <Col className="ml-auto mr-auto text-center" >
               <h1 className="presentation-title">THE TEAM</h1>
-              <Bounce><h1>CORE MEMBERS</h1></Bounce>
+              <h1>CORE MEMBERS</h1>
 
              
             </Col>
@@ -57,15 +55,7 @@ function SectionDark(){
                 />
                 <p className="text-center">DEVELOPER-CORE  AKASH LENDE</p>
               </Col>
-            <Col className="mr-auto" md="2" sm="3">
-                
-                <img
-                  alt="..."
-                  className="img-thumbnail img-responsive"
-                  src={require("assets/img/richa.jpg")}
-                />
-                <p className="text-center">DESIGNER-CORE  RICHA MAURYA</p>
-              </Col>
+       
               <Col className="mr-auto" md="4" sm="6">
                 
                 <img
@@ -77,7 +67,7 @@ function SectionDark(){
                 <p className="text-center">PARAG GHODPADE</p>
               </Col>
              
-              <Col className="mr-auto" md="3" sm="3">
+              <Col className="mr-auto" md="4" sm="3">
                 
                 <img
                   alt="..."
@@ -85,6 +75,15 @@ function SectionDark(){
                   src={require("assets/img/sakshi.jpeg")}
                 />
                 <p className="text-center">DESIGNER-CORE  SAKSHI DOSHI</p>
+              </Col>
+              <Col className="mr-auto" md="3" sm="3">
+                
+                <img
+                  alt="..."
+                  className="img-thumbnail img-responsive"
+                  src={require("assets/img/richa.jpg")}
+                />
+                <p className="text-center">DESIGNER-CORE  RICHA MAURYA</p>
               </Col>
               <Col className="mr-auto" md="5" sm="4">
                 
@@ -95,11 +94,47 @@ function SectionDark(){
                 />
                 <p className="text-center">MARKETING-CORE  SUDESH PAWAR</p>
               </Col>
+              <Col className="mr-auto" md="3" sm="3">
+                
+                <img
+                  alt="..."
+                  className="img-thumbnail img-responsive"
+                  src={require("assets/img/shreyas.jpg")}
+                />
+                <p className="text-center">SOCIAL MEDIA-CORE  SHREYAS DHORKHULE</p>
+              </Col>
+              <Col className="mr-auto" md="4" sm="3">
+                
+                <img
+                  alt="..."
+                  className="img-thumbnail img-responsive"
+                  src={require("assets/img/saurabh.jfif")}
+                />
+                <p className="text-center">MARKETING-CORE SAURABH MIRAJKAR</p>
+              </Col>
+              <Col className="mr-auto" md="3" sm="3">
+                
+                <img
+                  alt="..."
+                  className="img-thumbnail img-responsive"
+                  src={require("assets/img/shivani.jpg")}
+                />
+                <p className="text-center">SOCIAL MEDIA-CORE      SHIVANI SAKPAL</p>
+              </Col>
+              <Col className="mr-auto" md="2" sm="3">
+                
+                <img
+                  alt="..."
+                  className="img-thumbnail img-responsive"
+                  src={require("assets/img/sharavni.jpeg")}
+                />
+                <p className="text-center">OUTREACH-CORE  SHRAVANI KANADE</p>
+              </Col>
           </Row>
           <Row>
             <Col className="ml-auto mr-auto text-center" >
               
-              <Bounce><h1>MENTORS</h1></Bounce>
+            <h1>MENTORS</h1>
 
              
             </Col>
