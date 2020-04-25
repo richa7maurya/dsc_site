@@ -20,26 +20,23 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Container,
   Row,
   Col
 } from "reactstrap";
-
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import IndexHeader from "components/Headers/IndexHeader";
 import IndexNavbar from "components/Navbars/IndexNavbar";
+
+const heading={
+  
+ 
+  fontFamily:"googlesans",
+  color:"grey"
+  };
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -60,11 +57,12 @@ function ProfilePage() {
   return (
     <>
       <IndexNavbar />
-     <div className="section section-dark">
-     <Container>
-     
+     <div className="section section-dark" style={{backgroundColor:'white'}}>
+     <Container style={{color:"white"}}>
+    <h1 style={heading} className="text-center">CORE-COMMITEE</h1>
+    <br/>
+    <br />
       <Row>
-     
       <Col className="mr-auto" md="4" sm="3">
       <ProfilePageHeader />
       <div className="section profile-content">
@@ -74,7 +72,7 @@ function ProfilePage() {
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
                 src={require("assets/img/parag.jpeg")}
-                height="180px"
+                height="160px"
                   width="240px"
               />
             </div>
@@ -82,7 +80,7 @@ function ProfilePage() {
               <h4 className="title">
                 Parag Ghorpade<br />
                 <p>
-                1 line desciption.....
+                1 line desciption..machine learning enthusiast 
               </p>
               </h4>
               <h6 className="description">Team Lead</h6>
@@ -99,7 +97,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/akash.jpeg")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -107,7 +105,7 @@ function ProfilePage() {
               <h4 className="title">
                 Akash Lende<br />
                 <p>
-                hey... i m akshi 
+               Full stack developer
                 
                 </p>
               </h4>
@@ -125,7 +123,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/sakshi.jpeg")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -133,7 +131,7 @@ function ProfilePage() {
               <h4 className="title">
                 Sakshi Doshi<br />
                 <p>
-                hey.. ... 
+                hey..i m graphics designer
                 </p>
               </h4>
               <h6 className="description">Designer Core</h6>
@@ -157,7 +155,7 @@ function ProfilePage() {
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
                 src={require("assets/img/richa.jpg")}
-                height="180px"
+                height="160px"
                   width="240px"
               />
             </div>
@@ -182,7 +180,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/shreyas.jpg")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -207,7 +205,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/sudesh.jpg")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -238,7 +236,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/saurabh.jfif")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -263,7 +261,7 @@ function ProfilePage() {
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/shivani.jpg")}
-                  height="180px"
+                  height="160px"
                   width="240px"
                   />
                </div>
@@ -288,7 +286,7 @@ function ProfilePage() {
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
                 src={require("assets/img/sharavni.jpeg")}
-                height="180px"
+                height="160px"
                   width="240px"
               />
             </div>
@@ -304,10 +302,170 @@ function ProfilePage() {
           </div>
       </div>
       </Col>
-    
-   
     </Row>
    </Container>
+    <br />
+    <br />
+   <Container style={{color:"white"}}>
+    <h1 style={heading} className="text-center">MENTORS</h1>
+    <br />
+    <br />
+      <Row>
+      <Col className="mr-auto" md="4" sm="3">
+      <ProfilePageHeader />
+      <div className="section profile-content">
+           <div className="owner">
+             <div className="avatar">
+              <img
+                alt="..."
+                className="img-circle img-no-padding img-responsive"
+                src={require("assets/img/faizan.jpg")}
+                height="160px"
+                  width="240px"
+              />
+            </div>
+            <div className="name">
+              <h4 className="title">
+                Faizan Aktar<br />
+                <p>
+                1 line desciption.....
+              </p>
+              </h4>
+             </div>
+          </div>
+      </div>
+      </Col>
+       <Col className="mr-auto" md="4" sm="3">
+            <ProfilePageHeader />
+             <div className="section profile-content">
+               <div className="owner">
+                <div className="avatar">
+                  <img
+                  alt="..."
+                  className="img-circle img-no-padding img-responsive"
+                  src={require("assets/img/mane.jpeg")}
+                  height="160px"
+                  width="240px"
+                  />
+               </div>
+            <div className="name">
+              <h4 className="title">
+                hrishikesh mane<br />
+                <p>
+                hey... i m akshi 
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </Col>
+      <Col className="mr-auto" md="4" sm="3">
+            <ProfilePageHeader />
+             <div className="section profile-content">
+               <div className="owner">
+                <div className="avatar">
+                  <img
+                  alt="..."
+                  className="img-circle img-no-padding img-responsive"
+                  src={require("assets/img/mane.jpeg")}
+                  height="160px"
+                  width="240px"
+                  />
+               </div>
+            <div className="name">
+              <h4 className="title">
+                hrishikesh mane<br />
+                <p>
+                hey... i m akshi 
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </Col>
+    </Row>
+    </Container>
+    <br />
+    <br />
+   <Container style={{color:"white"}}>
+    <h1 style={heading} className="text-center">PHOTOGRAPHY TEAM</h1>
+    <br />
+    <br />
+      <Row>
+      <Col className="mr-auto" md="4" sm="3">
+      <ProfilePageHeader />
+      <div className="section profile-content">
+           <div className="owner">
+             <div className="avatar">
+              <img
+                alt="..."
+                className="img-circle img-no-padding img-responsive"
+                src={require("assets/img/faizan.jpg")}
+                height="160px"
+                  width="240px"
+              />
+            </div>
+            <div className="name">
+              <h4 className="title">
+                Faizan Aktar<br />
+                <p>
+                1 line desciption.....
+              </p>
+              </h4>
+             </div>
+          </div>
+      </div>
+      </Col>
+       <Col className="mr-auto" md="4" sm="3">
+            <ProfilePageHeader />
+             <div className="section profile-content">
+               <div className="owner">
+                <div className="avatar">
+                  <img
+                  alt="..."
+                  className="img-circle img-no-padding img-responsive"
+                  src={require("assets/img/mane.jpeg")}
+                  height="160px"
+                  width="240px"
+                  />
+               </div>
+            <div className="name">
+              <h4 className="title">
+                hrishikesh mane<br />
+                <p>
+                hey... i m akshi 
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </Col>
+      <Col className="mr-auto" md="4" sm="3">
+            <ProfilePageHeader />
+             <div className="section profile-content">
+               <div className="owner">
+                <div className="avatar">
+                  <img
+                  alt="..."
+                  className="img-circle img-no-padding img-responsive"
+                  src={require("assets/img/mane.jpeg")}
+                  height="160px"
+                  width="240px"
+                  />
+               </div>
+            <div className="name">
+              <h4 className="title">
+                hrishikesh mane<br />
+                <p>
+                hey... i m akshi 
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </Col>
+    </Row>
+    </Container>
    </div>
    <DemoFooter />
     </>

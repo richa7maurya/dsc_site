@@ -62,6 +62,7 @@ portion:"absolute",
 marginBottom:"2%",
 fontFamily:"googlesans",
 marginLeft:"5%",
+
 width:"700px"
 };
 const img61={
