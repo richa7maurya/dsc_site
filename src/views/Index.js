@@ -64,16 +64,14 @@ class Index extends React.Component {
     document.body.classList.add("index");
 
     return (
-      <>
+      <div style={{ overflowX: "hidden" }}>
         <IndexNavbar />
         <IndexHeader />
         <div className="main">
           <SectionButtons />
           <ContactUs ref={this.contact} />
-
-          <DemoFooter />
         </div>
-      </>
+      </div>
     );
   }
 }

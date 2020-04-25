@@ -56,7 +56,7 @@ function IndexHeader() {
   };
   let img5 = {
     marginTop: "8%",
-    width: "5%",
+    width: "15%",
     float: "right",
     zIndex: 6,
   };
@@ -148,7 +148,7 @@ function IndexHeader() {
     text2.fontSize = 16;
   }
   return (
-    <>
+    <div style={{ width: "100vw" }}>
       <div style={{ height: "100vh", width: "100%" }}>
         <img style={img9} src={require("assets/img/red-triangle.svg")} />
         <img style={img4} src={require("assets/img/Asset 4logo.png")} />
@@ -163,7 +163,7 @@ function IndexHeader() {
         <img style={img3} src={require("assets/img/Asset 3logo.png")} />
         <img style={img7} src={require("assets/img/red-rectangle.svg")} />
       </div>
-    </>
+    </div>
   );
 }
 
