@@ -12,7 +12,7 @@ class PhotoCard extends React.Component {
       <>
         <Col className="" md="4">
           <LazyLoadImage
-            style={{ width: "95%", borderRadius: 0 }}
+            style={{ width: "auto", height: "200px", borderRadius: 0 }}
             onClick={() => this.props.openModal(this.props.img)}
             effect="blur"
             className="card"
