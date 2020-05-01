@@ -14,8 +14,52 @@ import {
   FormText,
   Button,
 } from "reactstrap";
-
+import {Alert} from 'reactstrap';
+import { NotificationManager} from 'react-notifications';
+import {ToastsContainer, ToastsStore} from 'react-toasts';
+import { ToastContainer, toast } from 'react-toastify';
 class ContactUs extends React.Component {
+ constructor(props){
+super(props);
+this.state={
+  name:'',
+  email:'',
+  message:'',
+  mailSent: false,
+  error: null
+  
+}
+this.ThankYouMsg=React.createRef();
+this.myForm=React.createRef();
+this.ErrMsg=React.createRef();
+ } 
+ handleFormSubmit( event ) {
+   if(!(this.state.message=="" || this.state.name =="" || this.state.email == ""))
+   {
+     event.preventDefault();
+     fetch('https://dscmescoe.com/includes/mail2.php?name='+this.state.name+'&email='+this.state.email+'&message='+this.state.message)
+     .then(response => response.json())
+     .then(data =>{
+       console.log(data)
+       if(data.response===200)
+       {
+         this.setState({mailSent:true})
+         this.ThankYouMsg.current.className='d-block'
+         this.myForm.current.className='d-none'
+  } else {
+    this.setState({mailSent:false})
+    this.ErrMsg.current.className='d-block'
+    this.myForm.current.className='d-none'
+  }
+  this.state.mailSent? alert('  Feedback submitted successfully'): alert('Feedback Failed to Submit')
+  
+}
+)
+}
+  
+}
+
+ 
   render() {
     return (
       <>
@@ -111,9 +155,15 @@ class ContactUs extends React.Component {
               <h3 style={{ marginBottom: 20 }}>
                 <b>Leave a Message</b>
               </h3>
-              <form>
-                <FormGroup>
-                  <Input type="text" name="name" id="name" placeholder="Name" />
+              <form action="#"
+              ref={this.myForm}
+              >
+                <FormGroup >
+                  <Input type="text" name="name" id="name" placeholder="Name" value={this.state.name}
+                  onChange={e => this.setState({ name: e.target.value })}
+                  pattern="[a-zA-Z ]{3,30}"
+                  required={true}
+                  />
                 </FormGroup>
                 <FormGroup>
                   <Input
@@ -121,6 +171,9 @@ class ContactUs extends React.Component {
                     name="email"
                     id="email"
                     placeholder="Email"
+                    value={this.state.email}
+    onChange={e => this.setState({ email: e.target.value })}
+                    required
                   />
                   <FormText color="muted">
                     We'll never share your email with anyone else.
@@ -134,16 +187,42 @@ class ContactUs extends React.Component {
                     placeholder="Message"
                     rows="4"
                     style={{ resize: "none" }}
+                    value={this.state.message}
+                    required
+    onChange={e => this.setState({ message: e.target.value })}
                   />
                 </FormGroup>
                 <Button
                   color="primary"
                   type="submit"
+                  value="Submit" 
                   className="btn-outline-primary"
+                  onClick={e =>{ this.handleFormSubmit(e) 
+                    
+                  
+
+                  }
+                  } 
+                 
                 >
                   Submit
                 </Button>
+           
               </form>
+              <div className="d-none"
+              ref={this.ThankYouMsg}
+              >
+                <p style={{fontWeight: 400}}> 
+                Thank you for your feedback. You'll hear from us soon!
+                </p>
+              </div>
+              <div className="d-none"
+              ref={this.ErrMsg}
+              >
+                <p style={{fontWeight: 400}}> 
+                Feedback not sent :((<br /> Try again later!
+                </p>
+              </div>
             </Col>
           </Row>
         </div>
