@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cdee1e854d4af0234da80eabf72f566a",
+    "revision": "d6470a015346e07c797f35e34147c84e",
     "url": "/dsc_site/index.html"
   },
   {
-    "revision": "8d82511158af66edfd94",
+    "revision": "0fb5a57d8d3f2e4c0f19",
     "url": "/dsc_site/static/css/main.499e340a.chunk.css"
   },
   {
-    "revision": "f2243b8915f25ed02d8c",
-    "url": "/dsc_site/static/js/2.f6aebc4f.chunk.js"
+    "revision": "3112ab18d5e9531e8767",
+    "url": "/dsc_site/static/js/2.83463b6b.chunk.js"
   },
   {
-    "revision": "8d82511158af66edfd94",
-    "url": "/dsc_site/static/js/main.0b670abc.chunk.js"
+    "revision": "0fb5a57d8d3f2e4c0f19",
+    "url": "/dsc_site/static/js/main.958f93cc.chunk.js"
   },
   {
     "revision": "b2d453bb6c298474947a",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "80954654631af8ffb5ef4453a9caa3ec",
     "url": "/dsc_site/static/media/bruno-abatti.80954654.jpg"
-  },
-  {
-    "revision": "ae11d928aae96245020bb59a1910f758",
-    "url": "/dsc_site/static/media/clem-onojeghuo-3.ae11d928.jpg"
   },
   {
     "revision": "06977287b5d7b0c43da7b03806a8b21b",
