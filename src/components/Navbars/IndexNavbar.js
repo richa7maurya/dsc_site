@@ -89,17 +89,17 @@ function IndexNavbar(props) {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink data-placement="bottom" href="/profile-page">
+              <NavLink data-placement="bottom" href="/admin/team">
                 Team
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink data-placement="bottom" href="/gallery-page">
+              <NavLink data-placement="bottom" href="/admin/gallery">
                 Gallery
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink data-placement="bottom" href="/contact-us">
+              <NavLink data-placement="bottom" href="/admin/contact">
                 Contact
               </NavLink>
             </NavItem>

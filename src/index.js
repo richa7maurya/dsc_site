@@ -18,45 +18,48 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { Router, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
 import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 // pages
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import GalleryPage from "views/GalleryPage.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
 
-import ContactUs from "views/index-sections/ContactUs.jsx";
+import AdminLayout from "./views/AdminLayout";
 // others
+import { createBrowserHistory } from "history";
+
+const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router history={hist}>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
-
-      <Route
-        path="/gallery-page"
-        render={(props) => <GalleryPage {...props} />}
-      />
-
-      <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
-      />
-
-      <Route
-        path="/contact-us"
-        render={(props) => <Index {...props} getContact={1} />}
-      />
-
-      <Redirect to="/index" />
+      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Redirect from="/" to="/admin/home" />
     </Switch>
-  </BrowserRouter>,
+  </Router>,
+  // <BrowserRouter>
+  //   <Switch>
+  //     <Route path="/index" render={(props) => <Index {...props} />} />
+
+  //     <Route
+  //       path="/gallery-page"
+  //       render={(props) => <GalleryPage {...props} />}
+  //     />
+
+  //     <Route
+  //       path="/profile-page"
+  //       render={(props) => <ProfilePage {...props} />}
+  //     />
+
+  //     <Route
+  //       path="/contact-us"
+  //       render={(props) => <Index {...props} getContact={1} />}
+  //     />
+
+  //     <Redirect to="/index" />
+  //   </Switch>
+  // </BrowserRouter>
   document.getElementById("root")
 );
